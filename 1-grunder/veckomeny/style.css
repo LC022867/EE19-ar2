@@ -1,0 +1,27 @@
+body {}
+
+table {
+    border-spacing: 15px;
+    background-color: #eeeeee;
+}
+
+caption {
+    background-image: url(./posters-picknick-duk.jpg.jpg);
+    font-size: 50px;
+    padding: 20px;
+}
+
+tr {}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    background-color: mintcream;
+}
+
+img {}
