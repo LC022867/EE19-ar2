@@ -1,0 +1,45 @@
+body {
+    background: #0e204d url(./bilder/flow.png);
+    background-position: center top;
+}
+
+table {
+    width: 600px;
+    background: #ffffff;
+    /* förkortning med font size = font-family: sans-serif;
+    font-size: 13px; */
+    font: 12px sans-serif;
+    border-collapse: collapse;/*ta bord de vita avstånd*/
+    margin: auto;
+}
+
+caption {
+    background: #12326E;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* andra raden är rosa*/
+tr:nth-child(2) {
+    background: #E73088;
+}
+/* Varanan read är ljusgrå */
+tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+/*första raden är mörkblå */
+tr:nth-child(1) {
+    background: #12326E;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+}
+
+img {
+    width: 15px;
+    margin: right 20px;
+}
