@@ -1,0 +1,56 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layoutens utseende */
+body {
+    margin: 250px;
+    background: url(./bilder/mahmudul-hasan-shaon-txfmOG0lJ20-unsplash.jpg)
+}
+
+.kontainer {
+    width: 600px;
+    background: blueviolet;
+    margin: auto;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    background: rgb(63, 10, 6);
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 2px 2px 0 rgb(228, 225, 225);
+    font-weight: 50px;
+}
+
+/* inläggens utseende */
+
+.inlägg {
+    background: rgb(68, 45, 15);
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 13px;
+    box-shadow: 0 0 5px rgb(192, 188, 188);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    
+}
+
+img {
+    width: 100%;
+}
