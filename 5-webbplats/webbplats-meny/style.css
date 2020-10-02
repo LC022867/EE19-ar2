@@ -1,0 +1,79 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: yellow;
+}
+
+.kontainer {
+    width: 900px;
+    margin: 0px auto;
+    background-color: red;
+}
+
+h1 {
+    font-size: 100px;
+    margin-left: 260px;
+    color: white;
+}
+
+ul {
+    font-size: 30px;
+}
+
+h2 {
+    margin-left: 480px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+figure {
+    margin-left: 400px;
+    padding:;
+}
+
+figcaption {
+    color: white;
+}
+
+.Avicii {
+    width: 250px;
+    margin-left: 80px;
+}
+
+.Menfred_Mann {
+    width: 250px;
+
+}
+
+.Madonna {
+    width: 250px;
+}
+
+.Boney {
+    width: 250px;
+}
+
+.Maroon {
+    width: 400px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.tack {
+
+}
+
