@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&family=Oswald:wght@300&display=swap');
+
+/* CSS HEX */
+:root {
+--dark-red: #8c1c13ff;
+--deep-chestnut: #bf4342ff;
+--almond: #e7d7c1ff;
+--cinereous: #a78a7fff;
+--liver: #735751ff; 
+}
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -10,70 +22,101 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* Sidans utseende */
 body {
-    background-color: yellow;
+    background-color: #735751ff;
 }
+
 
 .kontainer {
-    width: 900px;
+    width: 850px;
+    margin: auto;
     margin: 0px auto;
-    background-color: red;
+    background:rgba(146, 141, 141, 0.795);
+    padding: 40px;
 }
 
-h1 {
-    font-size: 100px;
-    margin-left: 260px;
-    color: white;
+/* Sidans rubriker */
+.kontainer h1 {  /* Gäller bara alla h1 inuti div.kontainer */
+    font-size: 80px;
+    text-align: center;
+    color: #8c1c13ff;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 55px;
+    text-shadow: 2px 2px 6px rebeccapurple;
 }
 
-ul {
+.kontainer h2 {  /* Gäller bara alla h2 inuti div.kontainer */
+    text-align: center;
+    padding-bottom: 50px;
+    color: #bf4342ff;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px;
+    font-size: 35px;
+}
+
+/* Menyns utseende */
+.kontainer ul {
     font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+    text-align: center;
 }
 
-h2 {
-    margin-left: 480px;
-    padding-bottom: 20px;
+.kontainer ul li {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: inline; /* Horrisontellt */
+}
+
+.kontainer ul a { /* Menyknapparna */
+    background:  purple;
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(106, 119, 47, 0.877);
+    width: 130px;
+    display: inline-block; /* Lika breda */
+}
+kontainer ul a:hover { /* När pekaren är över */
+    background: #e7d7c1ff;
+    box-shadow: none;
 }
 
-figure {
-    margin-left: 400px;
-    padding:;
+.kontainer ul a.aktiv {
+    background: rgb(58, 71, 189); /* Blir till blå när jag trycker på menyknapparna */
 }
 
-figcaption {
-    color: white;
-}
-
-.Avicii {
-    width: 250px;
-    margin-left: 80px;
-}
-
-.Menfred_Mann {
-    width: 250px;
-
-}
-
-.Madonna {
-    width: 250px;
-}
-
-.Boney {
-    width: 250px;
-}
-
-.Maroon {
+/* Bildrutans utseende */
+.kontainer figure {
+    margin-left: 0px auto;
+    background: #FFF;
     width: 400px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 2px 2px 6px rebeccapurple;
 }
 
-p {
+.kontainer figure img {
+    display: block;
+    width: 100%;
+}
+
+.kontainer figure figcaption {
+    color: white;
+}
+/* Sidans text */
+.kontainer p {
     font-size: 20px;
     color: white;
-    padding: 20px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 20px;
 }
 
-.tack {
-
+.kontainer p a {
+    background: var(--orange-yellow-crayola) ;
+    color: blue;
+    text-decoration: none;
 }
 
