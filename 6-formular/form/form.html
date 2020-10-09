@@ -4,15 +4,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enkel formulär</title>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Noto+Sans+JP:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="">
-        <label for="fnamn">Förnamn</label> <input id="fnamn" type="text"> 
-        <label for="enamn">efternamn</label> <input id="enamn" type="text"> 
-        <label for="epost">Mail</label> <input id="epost" type="email"> 
-        <button>Skicka</button> 
+        <label for="fnamn">Förnamn</label>
+        <input id="fnamn" type="text" placeholder="tex Max">
+
+        <label for="enamn">efternamn</label>
+        <input id="enamn" type="text" placeholder="Svensson">
+
+        <label for="epost">Mail</label>
+        <input id="epost" type="email" placeholder="tex kalle@gmail.se">
+
+        <label for="num">Mobilnummer</label>
+        <input id="num" type="text">
+
+        <label for="gard">Gatuadress</label>
+        <input id="gard" type="text">
+
+        <label for="postad">postadress</label>
+        <input id="postad" type="text">
+
+        <label>Kön</label>
+        <div>
+            <input type="radio" name="Kön"checked >kille
+            <input type="radio" name="Kön"checked >tjej
+            <input type="radio" name="Kön"checked >annat
+        </div>
+
+        <label>Allergi</label>
+        <div>
+            <input type="checkbox" name="allergi">Gluten
+            <input type="checkbox" name="allergi">Laktos
+            <input type="checkbox" name="allergi">Nötter
+        </div>
+
+        <label>Hemland</label>
+        <select name="hemland">
+            <option value="0">Välj ett land!</option>
+            <option value="1">Norge</option> 
+            <option value="2">Finland</option> 
+            <option value="3">Ryssland</option> 
+            <option value="4">Sverige</option> 
+            <option value="5">Danmark</option> 
+            <option value="6">Annat</option> 
+        </select>
+
+        <label>Kommentar</label>
+        <textarea cols="30" rows="10" placeholder="Skriv din kommentar här!"></textarea>
+
+        <button>Skicka</button>
     </form>
 </body>
 </html>
