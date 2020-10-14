@@ -27,10 +27,6 @@ body {
     box-shadow: teal;
 }
 
-.kontainer p {
-    
-}
-
 /* Formulärets utseende */
 .kontainer form {
     display: grid;
