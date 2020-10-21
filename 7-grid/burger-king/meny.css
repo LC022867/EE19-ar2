@@ -12,12 +12,15 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* sidhuvudets utseende */
 
 .sidhuvud {
-    font-family: 'Roboto Slab', serif
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
 
 .sidhuvud ul {
-    
-    
+    list-style-type: none; /* Tar bort punkterna från texten */
+    margin: 30px 30px 0 0;
 }
 
 .sidhuvud img {
@@ -26,16 +29,25 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 .sidhuvud li {
     text-transform: none;
+    display: inline; /* horisontellt */
+    margin-left: 50px;
+    font-size: 25px;
 }
 
 .sidhuvud li a {
+    text-decoration: none;
+    color: #682F1C;
+    font-size: 17px;
+    text-transform: uppercase;
+}
 
+.sidhuvud li a.aktiv {
+    color: #F7A600
 }
 
 .sidhuvud li a:hover {
-
+    color: #B6978A;
 }
-
 /* Rutornas utseende */
 /* Ljus fef1e5 */
 /* Mörk ljus efdac5 */
@@ -43,6 +55,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 .ljus {
     background: #fef1e5;
 }
+
 .mörk {
     background: #efdac5;
 }
@@ -52,20 +65,39 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.rutor .burgare {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
 .rutor .burgare h1 {
     font-family: 'Roboto Slab', serif;
-    
+    color: #682F1C;
+    margin-top: 80px;
+    font-size: 40px;
 }
 
 .rutor .burgare h2{
     font-family: 'Dancing Script', cursive;
+    color: #682F1C;
+    margin-bottom: 20px;
 }
 
 .rutor .burgare img {
-    width: 100%;
+    width: 80%;
+    transition: all 0.2s; /* Mjuk övergång */
+}
+
+.rutor .burgare img.hover {
+    transform: scale(1.2);
 }
 
 
 .burgare p {
-
+    text-align: center;
+    color: #682F1C;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
