@@ -1,0 +1,48 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #dddddd;
+}
+
+.content {
+    font-size: 24px;
+    border-collapse: collapse;
+    margin: 6px 0 0 150px;
+    background: white;
+    border: solid 5px black;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content thead tr {
+    font-weight: bold;
+    background: #dddddd; /* Tack vare jag gjorde thead, så kan jag ligga färger inom theah th */
+}
+
+.content tbody tr {
+    border-bottom: 2px solid #dddddd; /* Den ligger linjer i alla tbody */
+}
+
+content td {
+    text-align: center;
+}
+
+.content th, td {
+    padding: 17px 12px;
+}
+
+tr:nth-child(odd) {
+    background: #dddddd; /* Lägger varenda färg i ordning*/
+}
+
