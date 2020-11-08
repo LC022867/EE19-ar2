@@ -1,0 +1,752 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center; /* Ligger texterna i mitten */
+}
+
+.omslag {
+    width: 1160px; /* Bredden */
+    margin: 0 auto; /* Flyttar den i mitten av nav */
+}
+header {
+    height: 70px; /* Höjden */
+    background: #4d4d4df3; /* Färgen det som jag valde */
+    width: 100%; /* Maximala bredden som kan nå */
+    z-index: 12; /* Täcker över så den inte hindrar nav */
+    position: fixed; /* Lägger de i horrisenellt */
+}
+
+.logo {
+    width: 30%; /* 30% av bredden av logo */
+    float: left; /* Lägger nav till vänster "Halloween" */
+    line-height: 62px; /* ha ”luft” mellan raderna för den ska vara läsbar */
+}
+
+.logo a {
+    text-decoration: none; /* Tar bort punkten.  */
+    font-size: 35px; /* Storleken */
+    letter-spacing: 4px; /* Mellanrum varenda ord */
+    color: #ccc; /* Färgen */
+    height: 66px; /* Höjden */
+    font-family: 'Henny Penny', cursive;
+}
+
+nav {
+    float: right; /* Lägger den till höger */
+    line-height: 62px; /* utrumme av linjerna inom texterna */
+}
+
+
+nav a {
+    text-decoration: none;/* Tar bort under sträck */
+    letter-spacing: 3px; /* Mellanrum varenda ord */
+    font-size: 15px; /* Storleken */
+    margin: 0 25px; /* Position */
+    padding: 25px 0; /* Mellanrum insidan av boxen */
+    color: #ccc; /* Färgen */
+    font-family: 'Henny Penny', cursive;
+}
+
+.area1 { /* Min första sida (Rubrik) */
+    width: 100%; /* Tar 100% utrumme av bredden som den kan */
+    height: 400px; /* Höjden av bilden */
+    position: fixed; /*  */
+    top: 70px;
+    background-image: url(./bilder/jan-jakub-nanista-z9hvkSDWMIM-unsplash\ \(1\).jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.area1 h2 {
+    margin-top: 130px; /* Lägger ner bilden */
+    color: rgb(214, 214, 214);
+    text-transform: uppercase; /* Alla ska vara stora bokstäver */
+    font-size: 70px; /* Storleken */
+    text-align: center; /* Text i mitten */
+}
+
+.area1 hr {
+    width: 600px; /* Bredden av linjen av "welcome" */
+}
+
+
+
+
+.area11 { /* Min andra sida (Rubrik)*/
+    width: 100%; /* Tar 100% utrumme av bredden som den kan */
+    height: 400px; /* Höjden av bilden */
+    position: fixed; /*  */
+    top: 70px;
+    background-image: url(./bilder/treat-town-halloween-1.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.area11 h2 {
+    margin-top: 130px; /* Lägger ner bilden */
+    color: rgb(214, 214, 214);
+    text-transform: uppercase; /* Alla ska vara stora bokstäver */
+    font-size: 70px; /* Storleken */
+    text-align: center; /* Text i mitten */
+}
+
+.area11 hr {
+    width: 600px; /* Bredden av linjen av "welcome" */
+}
+
+
+
+.area111 { /* Min tredje sida (Rubrik)*/
+    width: 100%; /* Tar 100% utrumme av bredden som den kan */
+    height: 400px; /* Höjden av bilden */
+    position: fixed; /* Med fixed väljer du hur ett visst element ska placeras i förhållande till webbläsarfönstret */
+    top: 70px;
+    background-image: url(./bilder/clothes-halloween.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.area111 h2 {
+    margin-top: 130px; /* Lägger ner bilden */
+    color: rgb(214, 214, 214);
+    text-transform: uppercase; /* Alla ska vara stora bokstäver */
+    font-size: 70px; /* Storleken */
+    text-align: center; /* Text i mitten */
+}
+
+.area111 hr {
+    width: 600px; /* Bredden av linjen av "welcome" */
+}
+
+
+
+
+.area1111 { /* Min fjärde sida (Rubrik)*/
+    width: 100%; /* Tar 100% utrumme av bredden som den kan */
+    height: 400px; /* Höjden av bilden */
+    position: fixed; /*  Med fixed väljer du hur ett visst element ska placeras i förhållande till webbläsarfönstret */
+    top: 70px;
+    background-image: url(./bilder/meow.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.area1111 h2 {
+    margin-top: 130px; /* Lägger ner bilden */
+    color: rgb(19, 17, 17);
+    text-transform: uppercase; /* Alla ska vara stora bokstäver */
+    font-size: 70px; /* Storleken */
+    text-align: center; /* Text i mitten */
+    font-family: 'Henny Penny', cursive;
+
+}
+
+.area1111 hr {
+    width: 600px; /* Bredden av linjen av "welcome" */
+}
+
+
+
+.area11111 { /* Min femte sida (Rubrik)*/
+    width: 100%; /* Tar 100% utrumme av bredden som den kan */
+    height: 400px; /* Höjden av bilden */
+    position: fixed; /*  */
+    top: 70px;
+    background-image: url(./bilder/books.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.area11111 h2 {
+    margin-top: 130px; /* Lägger ner bilden */
+    color: rgb(214, 214, 214);
+    text-transform: uppercase; /* Alla ska vara stora bokstäver */
+    font-size: 70px; /* Storleken */
+    text-align: center; /* Text i mitten */
+}
+
+.area11111 hr {
+    width: 600px; /* Bredden av linjen av "welcome" */
+}
+
+
+.area2 {
+    width: 100%; /* Bredden */
+    position: relative; /* lägger sig innehållt exakt där det skulle lägga sig även utan formatering */
+    top: 350px;
+    background-image: linear-gradient(to right top, #af6620, #ab5b24, #a55027, #9f452a, #973b2d);
+    height: 1650px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+
+.area22 {
+    width: 100%; /* Bredden */
+    position: relative; /* lägger sig innehållt exakt där det skulle lägga sig även utan formatering */
+    top: 350px;
+    background-image: linear-gradient(to right bottom, #0c4b1d, #005852, #0060a0, #0059d6, #9704bd);
+    height: 1600px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+    font-family: 'Special Elite', cursive;
+}
+
+.area22 h2 {
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+.area222 {
+    width: 100%; /* Bredden */
+    position: relative; /*lägger sig innehållt exakt där det skulle lägga sig även utan formatering */
+    top: 350px;
+    background-image: linear-gradient(to right top, #44113f, #3c1241, #321443, #281544, #1b1645, #221442, #28113f, #2d0f3c, #3d0732, #470226, #4c041a, #4d0d0b);
+    height: 1200px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+
+.area222 h1 {
+    font-family: 'Special Elite', cursive;
+}
+
+.area2 h2 {
+    padding: 50px 0 0 0; /* utrumme övre delen */
+    font-size: 40px; /* Storleken */
+    text-align: center; /* Texten i mitten */
+    color: rgb(214, 214, 214); /* Färgen */
+}
+
+/* Sida 1 */
+
+.container1 {
+    display: grid; /* Aktiverar grid */
+    margin: 80px auto 0 20px; /* Position */
+    height: 130vh; /* Höjden */
+    grid-template-columns: 1fr 1fr 1fr 1fr ; /* Har valt 4 columer */
+    grid-template-rows: 6fr 5fr 1.2fr 4fr; /* Valt olika storlek av row */
+    grid-template-areas: /* Där berättar jag till programmet hur min struktur ska vara av själva arean. */
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer ";
+    grid-gap: 10px; /* Avstånd till varandra */
+}
+
+.main {
+    background: lightseagreen;
+    grid-area: main; /* Aktiverar area på sin position */
+}
+
+.main h3{
+    font-size: 40px;
+}
+
+.main p {
+    font-size: 30px;
+}
+
+.sidebar {
+    background: white;
+    grid-area: sidebar; /* Akriverar area på sin poition */
+    border-radius: 10px;
+}
+
+.sidebar p {
+    padding: 10px;
+    margin-top: 10px;
+    word-spacing: 2px;
+    color: rgb(221, 4, 4);
+    line-height: 30px;
+    font-family: 'Special Elite', cursive;
+}
+
+.content1 {
+    background-image: url(./bilder/picsures-1.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    grid-area: content1; /* Akriverar area på sin poition */
+}
+
+.content2 a {
+    font-size: 25px;
+    
+}
+
+.content2 {
+    background-image: url(./bilder/picsure-2.jpg);
+    grid-area: content2; /* Akriverar area på sin poition */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content3 {
+    background-image: url(./bilder/picsure-3.jpg);
+    grid-area: content3; /* Akriverar area på sin poition */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content4 {
+    background: purple;
+    grid-area: content4; /* Akriverar area på sin poition */
+}
+
+.footer {
+    background: maroon;
+    grid-area: footer; /* Akriverar area på sin poition */
+    border-radius: 10px;
+}
+
+.footer p {
+    color: black;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
+}
+
+/* Till sida 2 */
+
+.container1-side1 { /* Min andra sida  av strukturen*/
+    display: grid; /* Aktiverar grid */
+    margin: 100px 25px 0 20px; /* Position */
+    height: 130vh; /* Höjden */
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.area2 h2 {
+    font-size: 70px;
+}
+
+.main-side1 { 
+    border: 9px solid black;
+    border-radius: 20px;
+    background-image: url(./bilder/candy-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+
+.content0-side1 {
+    background-image: url(./bilder/candy-2.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}   
+
+
+.main-side1 a { /* Alla knapparna inom candies */
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background: linear-gradient(to right bottom, #1473a1, #006cb8, #155fc8, #5f48cb, #9704bd);
+    border-radius: 8px;
+ }
+
+.content0-side1 a {
+   text-decoration: none;
+   font-size: 20px;
+   color: #005852;
+   text-transform: uppercase;
+   initial-letter: 2px;
+   padding: 12px 36px;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+   border-radius: 8px;
+}
+
+.content1-side1 a {
+   text-decoration: none;
+   font-size: 20px;
+   color: #005852;
+   text-transform: uppercase;
+   initial-letter: 2px;
+   padding: 12px 36px;
+   background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+   border-radius: 8px;
+}
+
+
+.content2-side1 a {
+   text-decoration: none;
+   font-size: 20px;
+   color: #005852;
+   text-transform: uppercase;
+   initial-letter: 2px;
+   padding: 12px 36px;
+   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+   border-radius: 8px;
+}
+
+.content3-side1 a {
+   text-decoration: none;
+   font-size: 20px;
+   color: #005852;
+   text-transform: uppercase;
+   initial-letter: 2px;
+   padding: 12px 36px;
+   background-image: linear-gradient(to right top, #8e4a23, #833441, #613054, #333052, #0f2a3d);
+   border-radius: 8px;
+}
+
+.content4-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #888e23, #3c8647, #007567, #006072, #274962);
+    border-radius: 8px;
+ }
+
+ .content5-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #8e235c, #922e35, #814417, #65560f, #456227);
+    border-radius: 8px;
+ }
+
+ .content6-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #82238e, #931052, #802a28, #623a19, #474022);
+    border-radius: 8px;
+ }
+
+.content7-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #0c2d43, #2b2640, #3c1f32, #411e1f, #392210);
+    border-radius: 8px;
+ }
+ 
+ .content8-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #28442d, #105a57, #196d87, #6279aa, #ab80b1);
+    border-radius: 8px;
+ }
+
+ .content9-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #7fd02c, #cbb700, #f89937, #ff806b, #ff789d, #fd77ac, #f778bc, #ef7bcc, #f473bf, #f86cb1, #fa65a2, #fb5f93);
+    border-radius: 8px;
+ }  
+
+ .content10-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #993c2e, #834d18, #695a16, #4e6228, #336641, #1a6753, #006663, #006470, #00617a, #005d83, #105788, #364f89);
+    border-radius: 8px;
+ }
+
+ .content11-side1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #0b3b18, #2f3800, #4c3000, #661f08, #75022d, #7e0935, #88113e, #911847, #9c362f, #98541d, #89701c, #738936);
+    border-radius: 8px;
+ }  
+
+ .content12-side1 a { 
+    text-decoration: none;
+    font-size: 20px;
+    color: #005852;
+    text-transform: uppercase;
+    initial-letter: 2px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to right top, #3b0b37, #52073c, #68013c, #7e0039, #920033, #a1152f, #af2829, #ba3921, #c64f1e, #d0641a, #d97917, #e08e16);
+    border-radius: 8px;
+ }   /* Slutet av knapparna*/
+
+
+
+.content1-side1 { /* Alla bilderna om candy förslag */
+    background-image: url(./bilder/candy-3.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content2-side1 {
+    background-image: url(./bilder/candy-4.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content3-side1 {
+    background-image:url(./bilder/candy-5.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content4-side1 {
+    background-image: url(./bilder/candy-6.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content5-side1 {
+    background-image: url(./bilder/candy-7.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content6-side1 {
+    background-image: url(./bilder/candy-8.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+    background-size: cover;
+    background-position: center;
+}
+
+.content7-side1 {
+    background-image: url(./bilder/candy-9.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+    background-position: center;
+    background-size: cover;
+}
+
+.content8-side1 {
+    background-image: url(./bilder/candy-10.jpg);
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+    background-size: cover;
+    background-position: center;
+}
+
+.content9-side1 {
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+    background-image: url(./bilder/candy-11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content10-side1 {
+    background-image: url(./bilder/candy-12.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content11-side1 {
+    background-image: url(./bilder/candy-13.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2;
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.content12-side1 { /* Slutet */
+    background-image: url(./bilder/candy-14.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3;
+    border: 9px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgb(114, 11, 182);
+}
+
+.container2 { 
+    box-shadow: 9px 9px 30px rgb(68, 46, 4); /* skuggan backsidan så det ser värklig ut */
+    width: 1200px; /* bredden */
+    min-height: 370px; 
+    background-image: url(./bilder/cool-background.jpg); /* Backgrunds färgen */
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    margin: 50px auto 0; /* Sätter den i mitten och ha lite utrumme i den övre delen */
+    display: flex; /* Gör den horisontellt */
+    border-radius: 20px; /* Gör den lite rundare */
+    border: 7px solid black ;
+}
+
+/* Sida tre */
+
+.showcase-box { /* Hur boxarna ska se ut */
+    width: 380px;
+    height: 200px;
+    box-shadow: 5px 15px 30px black;
+    border-radius: 10px;
+    margin: 0px 20px 10px;
+    overflow: hidden; /* Den gör så att resten gömmer sig när bilden är exempel för stor */
+    float: left; /* Alla kommer att hamna sig till vänster om ordningen */
+    margin: 20px;
+}
+
+.showcase-box img { /* Bilderna för både film och serie */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.trailer a { /* Mina knappar för filmer */
+   text-decoration: none;
+   font-size: 40px;
+   color: #005852;
+   text-transform: uppercase;
+   initial-letter: 2px;
+   padding: 30px 36px;
+   background-image: linear-gradient(to right top, #8e4a23, #833441, #613054, #333052, #0f2a3d);
+   border-radius: 8px;
+   
+}
+
+.heading {
+    font-size: 80px;
+    letter-spacing: 5px; /* Utrymme varenda ord */
+    padding: 60px;
+    font-family: 'Special Elite', cursive;
+}
+
+
+
+
+.container2 .picsure {
+    position: relative; /* Gör så att den täcker över samt de andra är i samma poistion */
+    width: 300px; /* Bredden */
+    height: 300px; /* Höjden */
+    background: black; /* backgrunds färgen */
+    margin: 100px 0 100px 200px; /* poistionen av bilderna */
+    box-shadow: 5px 5px 10px 10px black; /* Skugg effekt */
+}
+
+.container2 .picsure .boximg {
+    position: relative; /* För att kontrollera positionen, men den sitter i samma position */
+    overflow: hidden;/*  */
+}
+
+.container2 .picsure .boximg img {
+    max-width: 100%;
+    height: 300px; /* Höjden */
+    transition: transform 2s;
+}
+
+.container2 .picsure:hover .boximg img {
+    transform: scale(1.2);
+}
+
+.container2 .picsure .details {
+    position: absolute; /* Gör så att texten täcker bilden, samt lägger det i den rätta positionen. Då kan vi använda top,left,right och bottom.*/
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.616);
+    transform: scaleY(0); /* Med scaleY så kommer den att strecha på sig åt sidan. */
+    transition: transform .5s; 
+}
+
+.container2 .picsure:hover .details { /* Hover gör så att när personerna riktar mot bilden så kommer texterna komma */
+    transform: scaleY(1); /* Där aktiverar jag den när man siktar på bilden */
+}
+
+.container2 .picsure .details .text {
+    position: absolute; /* Gör så att texten täcker bilden, samt lägger det i den rätta positionen. Då kan vi använda top,left,right och bottom.*/
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; /* Texterna i mitten */
+    padding: 20px; /* utrumme så att texterna får mer space */
+}
+
+.container2 .picsure .details .text h2 { 
+    margin: 0;
+    padding: 0;
+    color: darkviolet;
+    font-size: 20px;
+}
+
+.container2 .picsure .details .text p {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
