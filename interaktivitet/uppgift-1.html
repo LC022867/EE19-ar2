@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lyssna på klick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssnar på klick</h1>
+        <button onclick="Angeadress()">Ange adress</button>
+    </div>
+
+    <script>
+        //Skapa ett webbsida där användaren kan klicka på en knapp som heter "Ange adress".
+         // När användaren klickat på knappen kommer en ruta upp som frågar "Var bor du?". 
+         //Skriptet ska sedan skriva ut svaret i loggen.
+
+        function Angeadress() {
+            // Be använder ange sitt namn
+            //Lagra det i variebeln adress
+            var adress = prompt("Var bor du? ANGE NU!! :))))");
+
+            //Skriv ut i loggen 
+            console.log(adress);
+        }
+    </script>
+</body>
+</html>

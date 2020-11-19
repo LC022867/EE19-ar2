@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lyssna på klick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssnar på klick</h1>
+        <button onclick="frågaNamn()">Ange namn</button>
+    </div>
+
+    <script>
+        function frågaNamn() {
+            // Be använder ange sitt namn
+            //Lagra det i variebeln namn
+            var namn = prompt("Vad heter du? :))))");
+
+            //Skriv ut i loggen 
+            console.log(namn);
+        }
+    </script>
+</body>
+</html>
