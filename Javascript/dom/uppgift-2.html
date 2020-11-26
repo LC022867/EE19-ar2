@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="dark()">mörk</button>
+        <button onclick="light()">ljus</button>
+    </div>
+    <script>
+        /* Skapa en webbsida med två knappar:
+          - Knapp 1 gör att sidan blir mörk.
+         - Knapp 2 gör att sidan blir ljus.*/
+
+        function dark() {
+            document.body.style.cssText = "background: #080937;";
+        }
+
+        function light() {
+            document.body.style.cssText = "background: #cce9f6;";
+        }
+    </script>
+</body>
+</html>

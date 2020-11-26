@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+    <h1>Mixtra med webbsidan</h1>
+    <button onclick="nyTitel()">Ny titel</button>
+    <button onclick="nyFärg()">Ändra färger</button>
+    <button onclick="tillBakaFärg()">Ändra färger</button>
+    <button onclick="Boom()">Booom!</button>
+    </div>
+    <script>
+        function nyTitel() {
+            console.log("Det funkar");
+
+            //Ändra på titeln
+            document.title = "Mjölk är bäst!";
+        }
+
+        function nyFärg() {
+            document.body.style.cssText = "background: blue; color: red;";
+        }
+
+        function tillBakaFärg() {
+            document.body.style.cssText = "background: #f9f6eb; color: black";
+        }
+
+        function Boom() {
+            document.body.innerHTML = "<h1>:3 meow! </h1>; <img src=\"./bilder/boom.jpg\" alt=\"Booom\";>"
+        }
+    </script>
+</body>
+</html>
