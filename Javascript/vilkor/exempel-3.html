@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inloggning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Får du köpa alkohol</h1>
+        <button onclick="tips()">Ange dag</button>
+    </div>
+    <script>
+            //Om det är fredag, köp chips på Lidl
+            function tips() {
+                var dag = prompt("Vilket dag 'r det idag'")
+                if (dag == "fredag") {
+                window.location.href = "https://estrella.se";
+            }   else if (dag == "söndag") {
+                window.location.href = "https://estrella.se";
+            }   else if (dag == "lördag") {
+                window.location.href = "https://estrella.se";
+            }   else if (dag == "måndag") {
+                window.location.href = "https://estrella.se";
+            }
+            }
+
+    </script>
+</body>
+</html>

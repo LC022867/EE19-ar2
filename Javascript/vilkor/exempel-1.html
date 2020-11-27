@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inloggning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inloggning</h1>
+        <button onclick="password()">Ange lösenord</button>
+    </div>
+    <script>
+        function password() {
+            var lösenord = prompt("Ange ett lösenord");
+
+            // Om lösenordet är rätt svara rätt!
+            if (lösenord == "1234") {
+                document.body.style.cssText = "background: green;";
+                alert("Bra jobbat!")
+            } else {
+                document.body.style.cssText = "background: red;";
+                alert ("Fel lösenord!! Försök igen!");
+                window.location.href = "https://www.mathem.se/varor/mjolk";
+            }
+        }
+    </script>
+</body>
+</html>
