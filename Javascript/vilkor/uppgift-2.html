@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script>
+        /*För att få åka berg-och-dalbana på en nöjespark så måste man vara mellan 1,4 och 1,9 meter lång.
+        Skapa ett skript som frågar om användarens längd.
+        Skriptet svarar om användaren får åka eller inte.*/
+
+        // Skapa ett script som frågar om användarens längd.
+        var längd = prompt("Hur lång är du?");
+
+        // Skriptet svarar om användaren får åka eller inte.
+        /*if (längd >= 1.4 && längd <= 1.9) { //&& = AND
+        alert ("Du får åka berg-och-dalbana!");
+            
+        } else {
+            alert ("Du får antingen för kort eller för lång för berg-och-dalbana!");
+        } */
+
+
+        //Är hen för kort?
+       /* if (längd < 1.4 ) {
+            alert("Sorry, du är för LITEN!");
+        } else {
+            if (längd > 1.9) {
+                alert ("Hey! Du slår dig i taket!");
+            } else {
+                alert ("Du får åka berg-och-dalbana!");
+            }
+            
+        }*/
+
+        //en kortare variant av nr 2
+        if (längd < 1.4 ) {
+            alert("Sorry, du är för LITEN!");
+        } else if (längd > 1.9) {
+                alert ("Hey! Du slår dig i taket!");
+            } else {
+                alert ("Du får åka berg-och-dalbana!");
+            }
+    </script>
+</body>
+</html>
