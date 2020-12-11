@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 1</h1>
+        <button onclick="user()">Ange användarnamn</button>
+    </div>
+
+    <script>
+        function user() {
+            var player = prompt ("Vad är ditt användarnamn?");
+            if (player == "Luciano") {
+                alert("Välkommen tillbaka!");
+            } else {
+                alert ("Vem är du?");
+            }
+        }
+    </script>
+</body>
+</html>

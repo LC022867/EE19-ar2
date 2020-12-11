@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="user()">Lampan funkar inte</button>
+    </div>
+       
+
+    <script>
+        alert ("Lampan funkar inte");
+
+        var svar1 = prompt ("Är lampan inkopplat?");
+        if (svar1 == "n") {
+            
+            //koppla in lampan
+            alert ("Koppla in lampan!");
+        } else {
+            var svar2 = alert ("Är glödlampan utbränd?");
+            if (svar2 == "j") {
+                
+                //ersätt glödlampan
+                alert ("Ersätt glödlampan!");
+            } else {
+                alert ("Köp en ny lampa!");
+            }
+        }
+    </script>
+</body>
+</html>

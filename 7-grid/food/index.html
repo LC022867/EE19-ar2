@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <section class="nummber-1">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+
+            <h1><span>The healthy</span> Eating Experience</h1>
+
+            <p>Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam noumy eirmod</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city1">Enter your city</label>
+                        <input type="text" name="city" id="city1">
+                        <p>Example: "San Diego"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome</h2>
+
+            <p>Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam noumy eirmod</p>
+        </div>
+        <img src="./bilder/charles-deluvio-D-vDQMTfAAU-unsplash (1).jpg" alt="Good food">
+    </section>
+</body>
+
+<script>
+    const btn = document.querySelector('#cta-btn');
+const overlay = document.querySelector('#overlay');
+
+btn.addEventListener('click', showOverlay);
+
+function showOverlay() {
+  overlay.style.display = 'grid';
+  overlay.classList.add('animate-overlay');
+}
+</script>
+</html>
