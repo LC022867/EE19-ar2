@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spam check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+
+        <button onclick="spamCheck()">Är du en människor?</button>
+    </div>
+    <script>
+        //Slumpa fram ett tal
+        //var slumptal= Math.random();                   //0.000 -> 0.999999
+        //var slumptal= Math.random() * 10;              //00.00 -> 09.99999
+        //var slumptal= Math.floor(Math.random() * 10);    //0 -> 9
+
+        function spamCheck() {
+            //slumpa fram tal-1
+            var tal1 = Math.floor(Math.random() * 10); 
+            //slumpa fram tal-2
+            var tal2 = Math.floor(Math.random() * 10);
+            //räkna ut summan = tal-1 + tal-2
+            var summa = tal1 + tal2;
+
+
+            //Be användaren räkna ut summan?
+            var gissning = prompt("Vad blir " + tal1 + " + " + tal2 + "?");
+            if (gissning == summa ) {
+                alert("Du har rätt! c:");
+            } else {
+                alert("Du är dum dum! >:C")
+            }
+            //Är svaret rätt?
+        }
+    </script>
+</body>
+</html>
