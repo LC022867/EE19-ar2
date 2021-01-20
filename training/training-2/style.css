@@ -1,0 +1,97 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(6, 6, 212); /*Min backgrounds färg*/
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer; /*gör det möjligt för användaren att klicka på den*/
+}
+
+.logo img {
+    width: 40px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.active {
+    color: blueviolet !important;
+}
+
+.signup {
+    top: 47px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.signup span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner {
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: white;
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+}
+.app-text h1 {
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.app-text p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.app-picsure {
+    width: 50%;
+    float: right;
+}
+.app-picsure img {
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 50px;
+}

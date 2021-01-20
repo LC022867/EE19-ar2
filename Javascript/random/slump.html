@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ett slumptal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <button onclick="knapp1">Random emolji</button>
+        <input type="text" disabled>
+    </div>
+</body>
+
+<script>
+
+    function knapp1() {
+        const output = document.querySelector(".knapp1");
+        const smiles = ["😐", "🙂", "😁", "🤤"]
+        const randomSmiles = Math.floor(Math.random() * 4);
+        output.value = smiles[randomSmiles]
+    }
+</script>
+</html>
