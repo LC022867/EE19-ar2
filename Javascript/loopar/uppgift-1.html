@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 1</h1>
+        <button onclick="loopa()">Tryck för frågan</button>
+    </div>
+
+    <script>
+        let land = "ryssland";
+
+        function loopa() {
+            while (true) {
+                //Ställa frågan
+                let fråga = alert("Vilket är Europas folkrikaste land?");
+
+                //Om svaret är rätt eller fel
+                if (fråga == land) {
+                    prompt("Du har rätt c:");
+                    break;
+
+                } else {
+                    prompt("Försök igen!");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

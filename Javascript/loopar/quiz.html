@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz</h1>
+        <p>Gissa rätt svar på 5 frågor</p>
+        <button onclick="quiz()">Starta quizen</button>
+    </div>
+
+    <script>
+
+        function quiz() {
+
+            let varv = 0;
+            let poäng = 0;
+
+            //Spelloop fem gånger
+            while (poäng < 5) {
+
+                //Slumpa fram en fråga
+                let slumptal = Math.ceil(Math.random() * 5); //1-5
+                console.log(slumptal);
+
+                if (slumptal = 1) {
+                    var gissning = prompt("Vad är förkortning till processor?\n(1=cpu, 2=gpu, 3=mmu)");
+
+                    //kolla om rätt?
+                    if (gissning == 1) {
+                        poäng++; //lägg till en poäng
+                        alert("Du har rätt!");
+                    }
+
+                    else {
+                        poäng--; //tappar poäng
+                        alert("Du har fel, du tappar ett minus poäng!");
+                    }
+                }
+
+
+                if (slumptal = 2) {
+                    var gissning = prompt("Gillar du mjölk?\n(1=Nej, 2=kanske, 3=Ja)");
+
+                    //kolla om rätt?
+                    if (gissning == 3) {
+                        poäng++; //lägg till en poäng
+                        alert("Du är något speciel! c:");
+                    }
+
+                    else {
+                        poäng -= 10; //tappar 10 poäng c:<
+                        alert("Hur vågar du!! DU får minus 10 poäng!! c:<");
+                    }
+
+
+                    if (slumptal = 3) {
+                        var gissning = prompt("Vilket spel skapade Mihoyo?\n(1= Genshin impact, 2= Rocket league, 3= Osu)");
+
+                        //kolla om rätt?
+                        if (gissning == 1) {
+                            poäng++; //lägg till en poäng
+                            alert("Du har rätt! c:");
+                        }
+
+                        else {
+                            poäng -= 10; //tappar 10 poäng c:<
+                            alert("Du har fel! Du får minus poäng");
+                        }
+
+                    }
+
+                    varv++; //Räknar varv
+                }
+
+                alert("Du fick " + poäng + " poäng");
+            }
+
+        }
+        
+    </script>
+</body>
+
+</html>

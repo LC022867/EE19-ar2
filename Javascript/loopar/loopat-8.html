@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loopa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loopa()">Loopa!</button>
+        <p></p>
+    </div>
+
+    <script>
+        //välja element vi ska jobba med
+        const eResultat = document.querySelector("p");  //valt ut <p></p>
+
+        function loopa() {
+
+            //skriv 50, 49 och så vidare..
+            let start = 50;
+            while (start > 0) {
+                
+                eResultat.innerHTML += start; 
+                gånger++
+
+                //räkna ned
+                start--;
+            } 
+        }
+    </script>
+</body>
+
+</html>

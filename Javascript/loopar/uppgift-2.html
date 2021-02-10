@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="loggin()">logga in</button>
+    </div>
+
+    <script>
+
+        function loggin() {
+
+            while (true) {
+
+                //fråga användaren
+                let lösen = prompt("Ange lösenord");
+
+                //Om den är rätt
+                if (lösen = "12345") {
+                    alert("Du är Inloggad!");
+                    break;
+
+                    //Om den är fel
+                } else {
+                    alert("Du är dumdum, testa igen! c:")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
