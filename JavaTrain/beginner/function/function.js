@@ -27,7 +27,7 @@ function greeting(yourName) {
 }
 
 let namE = prompt('What is your name?');
-greeting(namE);
+greeting(namE); 
 
 //How do agruments work in functions?
 //How do we add 2 numbers together in a function?
