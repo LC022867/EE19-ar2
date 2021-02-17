@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Får du ha körkort? (Uppgift 1)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa från sidan</h1>
+
+        <h2>input</h2>
+        <label>Ange Förnamn<input class="fnamn" type="text"></label>
+        <label>Ange Efternamn<input class="enamn" type="text"></label>
+        <label>Ange ålder<input class="ålder" type="text"></label>
+
+        <button onclick="körKort()">Skicka</button>
+
+        <h2>Output</h2>
+        <label>Svar <input class="svar" type="text"></label>
+    </div>
+
+
+    <script>
+        //Hitta input rutan
+        const inputFnamn = document.querySelector(".fnamn");
+        const inputEnamn = document.querySelector(".enamn");
+        const inputÅlder = document.querySelector(".ålder");
+        const inputSvar = document.querySelector(".svar");
+
+        //Läsa av input-rutan
+
+        function körKort() {
+
+
+            let fnamn = inputFnamn.value
+            let enamn = inputEnamn.value
+            let ålder = inputÅlder.value
+            let svar = inputSvar.value
+            console.log(fnamn, enamn, ålder);
+
+            if (ålder >= 18) {
+                //Om du är över 18 är lika med 18 så kan du du körkort!
+                inputSvar.value = "Du har möjlighet nu för körkort!!";
+            } else {
+                //annars får du vänta
+                inputSvar.value = "Du måste vänta till du blir 18 år";
+            }
+        }
+    </script>
+</body>
+</html>
