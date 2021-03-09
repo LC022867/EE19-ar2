@@ -34,8 +34,23 @@ console.log(firstName);  // Write the varible instead of passing a value like "L
 //DATA TYPES
 
 let javaScriptIsFun = true;
-console.log(javaScriptIsFun);;
+console.log(javaScriptIsFun);
+
 
 console.log(typeof true); //This operator "typeof" will make a new value which is a string with the type of this value. It will be "Boolean"
+//To show the type of the value
+
+console.log(typeof javaScriptIsFun); //Boolean
+console.log(typeof 23); //number
+console.log(typeof 'Jonas'); //string
 
 
+javaScriptIsFun = 'YES'; //Changed the value data's in the variable
+console.log(typeof javaScriptIsFun); //from boolean to a string
+
+let year;
+console.log(year); //undefined
+console.log(typeof year); //undefined
+
+year = 1991; //changing from an undefined to a number
+console.log(typeof year); //number
