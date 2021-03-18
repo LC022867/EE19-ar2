@@ -79,3 +79,51 @@ lastName = 'Meow'; // Don't do this too without using let or const, even if it w
 console.log(lastName);
 */
 ////////////////////////
+
+//BASICS OPERATORS
+/*
+// Mathematical operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah); //Jones is 46 and Sarahs age is 19
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+//2 ** 3 means 2 tothe powerof 3 = 2 * 2 * 2
+
+
+const firstName = 'Luciano';
+const lastName = 'Cucarano';
+console.log(firstName + ' ' + lastName);
+
+
+// Assignment operatos
+let x = 10 + 5; // x = 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1
+x--; // x = x - 1
+console.log(x); // x = 100
+
+
+// Comparison operators
+console.log(agJonas > ageSarah); // True, Jonas is 46 and Sarah is 19
+console.log(ageSarah >= 18); //True
+// >,<,>=,<=
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018); //True
+*/
+
+
+
+
+
+
+
+
+
+
+
+

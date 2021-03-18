@@ -1,7 +1,8 @@
-const country = 'sweden';
-const continent = 'europe';
+let country = 'Sweden';
+const continent = 'Europe';
 let population = '10 miljon';
 let isIsLand = country;
-const language = 'swedish';
+const language = 'Swedish';
 
 console.log(isIsLand, country, continent, population, language);
+
