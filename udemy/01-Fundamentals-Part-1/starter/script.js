@@ -55,3 +55,23 @@ console.log(typeof year); //undefined
 year = 1991; //changing from an undefined to a number
 console.log(typeof year); //number
 */
+////////////////////////////////
+/*
+let age = 30;
+age = 31; // we mutated the variable
+// It's okto declarea variable
+
+const birthYear = 1991;
+birthYear = 1990; // can't be assigned
+//It won't work due to const is a variable who can't be changed in the near futher
+
+//const is used to not change the variable forever, on the other hand let can be changed
+
+var job = 'programmer'; //var is an old way of defining variables
+job = 'teacher';
+//Don't use var in the modern world, in other word don't use var
+
+lastName = 'Meow'; // Don't do this too without using let or const, even if it works
+console.log(lastName);
+*/
+////////////////////////
