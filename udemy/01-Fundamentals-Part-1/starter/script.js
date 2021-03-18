@@ -32,6 +32,7 @@ console.log(firstName);  // Write the varible instead of passing a value like "L
 
 
 //DATA TYPES
+
 /*
 let javaScriptIsFun = true;
 console.log(javaScriptIsFun);
@@ -56,6 +57,9 @@ year = 1991; //changing from an undefined to a number
 console.log(typeof year); //number
 */
 ////////////////////////////////
+
+//VAR,CONST AND VAR
+
 /*
 let age = 30;
 age = 31; // we mutated the variable
