@@ -177,6 +177,33 @@ const markHigherBMI = m_BMI > j_BMI;
 console.log(m_BMI, j_BMI, markHigherBMI);
 */
 
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+//STRING AND TEMPLATE LITERALS
+/*
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthDay = 1991;
+const year = 2037;
+
+//The hard and annoying way to code
+const jonas = "I'm " + firstName + ', a ' + (year - birthDay) + ' years old ' + job;
+console.log(jonas);
+
+//Better way and easier!
+const jonasNew = `I'm ${firstName} a ${year - birthDay} year old ${job}`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String with \n\
+multiple \n\
+lines`); // \n\ <--- a new line
+*/
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
 
 
