@@ -118,11 +118,24 @@ const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018); //True
 */
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
+// OPERATORS PRECEDENCE
+/*
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
 
+console.log(now - 1991 > now - 2018); //MDN is a well known and widely used documentation site. It shows which operator will be executed first. For example + and - goes first than > and <
 
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10 (with --> = <-- they read right to left) if they didn't x and y would not be 10
+console.log(x, y);
 
-
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSara, averageAge); // 46, 19 and 32.5
+*/
 
 
 
