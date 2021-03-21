@@ -36,4 +36,11 @@ let description = 'Portugal is in Europe, and its 11 million people speak portug
 
 //Assignment 4
 
+//STRINGS AND TEMPLATE LITERALS
+/*
+let description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+*/
+
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
