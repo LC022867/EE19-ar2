@@ -205,7 +205,25 @@ lines`); // \n\ <--- a new line
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// TALKING DECISTIONS: IF / ELSE STATEMENTS
+/*
+const age = 19; //Make my own variable and use it in if
 
+if (age >= 18) { // Will be activated if you are 18 or above
+    console.log('Lucinao kan starta sina kör lektioner');
+} else { //Or else will this be activated
+    const yearLeft = 18 - age;
+    console.log(`Det fattas ${yearLeft} år för dig att kunna ta kör lektioner!`);
+}
 
+const birthDay = 2002;
 
+let century
+if (birthDay <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
 

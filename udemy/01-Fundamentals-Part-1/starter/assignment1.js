@@ -44,3 +44,16 @@ let description = `Portugal is in Europe, and its 11 million people speak portug
 //////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
 
+//Assignment 5
+
+//TALKING DECISTIONS: IF / ELSE STATEMENTS
+
+/*
+const miljonPopulation = 10;
+
+if (miljonPopulation > 33) {
+    console.log("Portugal's population is above average");
+} else {
+    console.log("Portugal's population is 22 million below average");
+}
+*/
