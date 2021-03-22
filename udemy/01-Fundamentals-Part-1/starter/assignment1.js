@@ -39,7 +39,7 @@ const description = `${country} is in ${continent} and it's ${populatio} million
 
 //STRINGS AND TEMPLATE LITERALS
 /*
-let description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+let description = `${country} is in ${continent} and it's ${populatio} million people speak ${language}`;
 */
 
 //////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ const miljonPopulation = 10;
 if (miljonPopulation > 33) {
     console.log("Portugal's population is above average");
 } else {
-    console.log("Portugal's population is 22 million below average");
+    console.log(`Portugal's population is ${33 - miljonPopulation} below average`);
 }
 */
 ////////////////////////////////////////////////////////////
