@@ -18,18 +18,18 @@ console.log(isIsLand, country, continent, population, language);
 
 //BASICS OPERATORS
 /*
-let population = 10000000;
-let NewPopulation = 10000000 / 2;
-Newpopulation++
-console.log(NewPopulation); // 5000001
+let country = 'Sweden';
+const continent = 'Europe';
+let population = 10;
+let isIsLand = country;
+const language = 'Swedish';
 
-let findland = 6000000;
-console.log(NewPopulation > findland); //False
+console.log(population / 2);
+population++
+console.log(population > 6);
+console.log(population < 33);
 
-let averagePopulation = 33000000;
-console.log(NewPopulation < averagePopulation); //True
-
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+const description = `${country} is in ${continent} and it's ${populatio} million people speak ${language}`;
 */
 
 ///////////////////////////////////////////////////////
