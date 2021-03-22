@@ -261,3 +261,40 @@ if (markHigherBMI) {
 */
 ////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+
+// Type Conversion
+
+//Start with conversion
+/*
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear); //Number function makes from string to numbers
+console.log(Number(inputYear) + 18); //2009
+
+console.log(inputYear + 18);//the results is 199118 due to "1991" is a string
+
+console.log(number("Jonas")); //You will get NaN which stands for "Not a number"
+
+console.log(typeof NaN); //Will say "Number". It's a weird result of this. Actually means an invalid number, not a number.
+
+console.log(String(23), 23); //Makes a number to a string instead
+*/
+
+// Type coercion
+/*
+console.log('I am ' + 23 + ' years old'); //Whenever there is a string and the number. The number will be converted to a string.
+
+console.log('I am ' + (String(23) + ' years old')); //If we didn't have automatic type coercion like many other languages don't, then we would have to manually do this.
+
+console.log('23' - '10' - 3); //Gives us 10. It converted the strings to numbers. The minus triggers the opposite conversion.
+
+console.log('23' + '10' + 3); //23103. 10 to 3 is converted to strings
+console.log('23' * '2');//Will be converted to numbers so it's 46
+console.log('23' / '2');//Same goes to dividing so it's 11.5
+console.log('23' > '18');//True. Javascript will convert strings to numbers automatically.
+
+let n = '1' + 1; //Be 11
+n = n - 1; //11 - 1 = 10
+console.log(n); //Will be 10
+*/
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////

@@ -4,7 +4,7 @@
 /*
 let country = 'Sweden';
 const continent = 'Europe';
-let population = '10 miljon';
+let population = 10;
 let isIsLand = country;
 const language = 'Swedish';
 
@@ -19,7 +19,8 @@ console.log(isIsLand, country, continent, population, language);
 //BASICS OPERATORS
 /*
 let population = 10000000;
-let NewPopulation = 1 + 10000000 / 2;
+let NewPopulation = 10000000 / 2;
+Newpopulation++
 console.log(NewPopulation); // 5000001
 
 let findland = 6000000;
@@ -59,4 +60,26 @@ if (miljonPopulation > 33) {
 */
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
+
+//TYPE CONVERSION AND COERCION
+/*
+1.Predict the result of these 5 operations without executing them:
+'9' - '5'; //This is 4
+'19' - '13' + '17'; //This is 617
+'19' - '13' + 17; //This is 23
+'123' < 57; //This is false
+5 + 6 + '4' + 9 - 4 - 2; //1149 - 4 - 2 = 1143
+2. Execute the operations to check if you were right
+*/
+/*
+console.log('9' - '5'); //4
+console.log('19' - '13' + '17'); //617
+console.log('19' - '13' + 17); //23
+console.log('123' < 57); //False
+console.log(5 + 6 + '4' + 9 - 4 - 2); //1143
+//Got all right!! :D
+*/
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
 
