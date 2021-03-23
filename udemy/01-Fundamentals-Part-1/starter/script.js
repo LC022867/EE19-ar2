@@ -298,3 +298,30 @@ console.log(n); //Will be 10
 */
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
+
+//TRUTHY AND FALSY VALUES
+
+//5 falsy values: 0,' ', undefined, null and NaN
+/*
+console.log(Boolean(0)); //False
+console.log(Boolean(undefined)); //False
+console.log(Boolean('Jonas')); //True
+console.log(Boolean({})); //True
+console.log(Boolean('')); //False
+
+const money = 0; //0 is false (If it was 1 or 1242 it would be true)
+if (money) { //Money = 0 which goes false
+    console.log("Don't spend it all :)");
+} else {
+    console.log("You should get a job!");
+}
+
+let height; //The height is undefined which is a false value
+if (height) { //False
+    console.log("YEY! Height is defined");
+} else {
+    console.log("Height is UNDEFINED!");
+}
+*/
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
