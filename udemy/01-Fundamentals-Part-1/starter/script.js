@@ -325,3 +325,32 @@ if (height) { //False
 */
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
+
+//EQUALITY OPERATORS: == vs. ===
+/*
+const age = '18';
+//Whenever or if block only has one line, we don't actually need two curly braces --> {} <---
+if (age === 18) console.log('You just became an adult! :D (Strict)'); //False
+
+if (age == 18) console.log('You just became an adult! :D (Loose)'); //True
+
+//General rule of clean code, avoid the loose equality operator as much as you can
+
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite); //The answer is what you put to the console. Example I put 23 and then the console will write 23
+console.log(typeof favourite); //String
+
+if (favourite == 23) { //23 === 23 --> True
+    console.log('Cool! 23 is an amazing number');
+} else if (favourite === 7) {
+    console.log('7 is also a cool number');
+} else if (favourite === 69) {
+    console.log('69 is a supercool number!!');
+} else {
+    console.log('Number is not 69 or 23 or 7');
+}
+
+if (favourite !== 69) console.log('Why not 69? :('); //!== is when it's not 69 will this console activate, but it's strict like -->===<--. (!= is a loose like -->==<--)
+*/
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
