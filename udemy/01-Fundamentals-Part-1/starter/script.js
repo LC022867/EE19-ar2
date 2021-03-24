@@ -350,7 +350,8 @@ if (favourite == 23) { //23 === 23 --> True
     console.log('Number is not 69 or 23 or 7');
 }
 
-if (favourite !== 69) console.log('Why not 69? :('); //!== is when it's not 69 will this console activate, but it's strict like -->===<--. (!= is a loose like -->==<--)
+if (favourite !== 69) console.log('Why not 69? :('); 
+//!== is when it's not 69 will this console activate, but it's strict like -->===<--. (!= is a loose like -->==<--)
 */
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
