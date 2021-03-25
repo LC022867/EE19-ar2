@@ -99,3 +99,21 @@ if (numNeighbours === 1) {
 
 ////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+
+//LOGICAL OPERATORS
+
+// Sarah is looking for a new country to live in. She wants to live in a country that speaks english, has less than 50 million people and is not an island.')
+/*
+let population = 10;
+let isIsLand = 'county';
+const language = 'Swedish';
+
+if (language === 'English' && population < 50 && !isIsLand) {
+    console.log('You should live in Sweden! :)');
+} else {
+    console.log('Sweden does not meet your criteria :(');
+}
+*/
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
