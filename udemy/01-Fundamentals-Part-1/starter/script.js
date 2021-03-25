@@ -350,8 +350,35 @@ if (favourite == 23) { //23 === 23 --> True
     console.log('Number is not 69 or 23 or 7');
 }
 
-if (favourite !== 69) console.log('Why not 69? :('); 
+if (favourite !== 69) console.log('Why not 69? :(');
 //!== is when it's not 69 will this console activate, but it's strict like -->===<--. (!= is a loose like -->==<--)
 */
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
+
+//LOGICAL OPERATORS
+/*
+const hasDrivesLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDrivesLicense && hasGoodVision);// AND
+console.log(hasDrivesLicense || hasGoodVision);// OR
+console.log(!hasDrivesLicense); // NOT - True to false
+
+//if (hasDrivesLicense && hasGoodVision) {
+//    console.log('Sarah is able to drive');
+//} else {
+//    console.log('Someone else should drive');
+//}
+
+const isTried = true; // C
+console.log(hasDrivesLicense && hasGoodVision && isTried); //isTried got from true to false with NOT-operator
+
+if (hasDrivesLicense && hasGoodVision && !isTried) {
+    console.log('Sarah is able to drive');
+} else {
+    console.log('Someone else should drive...');
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////////7///////////////////////////////////////////////////////////////////
+
