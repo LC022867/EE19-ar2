@@ -448,9 +448,9 @@ else if (dolpAverageScore === koalAverageScore && dolpAverageScore && koalAverag
 ////////////////////////////////////////////////////////////////////////////////
 
 //THE SWITCH STATEMENT
-
-const day = 'monday';
 /*
+const day = 'monday';
+
 //Like if else statement but shorter way
 switch (day) { //day === 'monday'
     case 'monday':
