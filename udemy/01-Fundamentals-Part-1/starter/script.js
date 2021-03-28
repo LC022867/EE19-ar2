@@ -497,3 +497,26 @@ if (day === 'monday') {
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//STATEMENT AND EXPRESSION
+
+//An expression is a piece of code that produces a value. For instance, three plus four is an expression because this is gonna produce a value.
+
+//Statement is like a bigger piece of code that is executed and which does not produce a value on itself. So basically, whenever something ends with a semicolon, that's then a statement.
+/*
+//all of this is an expression
+3 + 4
+1991
+true && false && !false
+
+//statement
+if (23 > 10) {
+    //"23 is bigger" is an expression but the rest is a statement
+    const str = '23 is bigger';
+}
+
+//`I'm ${2037 - 1991} years old ${me}` is an expression but, the rest are statements
+//if you make a variable, it will be an expression like "me = 'Jonas'"
+const me = 'Jonas'
+console.log(`I'm ${2037 - 1991} years old ${me}`);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
