@@ -446,3 +446,54 @@ else if (dolpAverageScore === koalAverageScore && dolpAverageScore && koalAverag
 */
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
+
+//THE SWITCH STATEMENT
+
+const day = 'monday';
+/*
+//Like if else statement but shorter way
+switch (day) { //day === 'monday'
+    case 'monday':
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break; //Taking a break or a pause. else it will continue executing
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday': //Can make two days in the same situation
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend! :D');
+        break;
+    default: //If none if these are true like else block
+        console.log('Not a valid day!');
+}
+
+
+//same as switch but translate in if and else statement
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend! :D');
+} else {
+    console.log('Not a valid day!');
+}
+
+//Use what is easier for you
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
