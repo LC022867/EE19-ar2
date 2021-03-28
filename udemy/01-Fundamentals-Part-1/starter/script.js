@@ -520,3 +520,35 @@ const me = 'Jonas'
 console.log(`I'm ${2037 - 1991} years old ${me}`);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//THE CONDITIONAL (TERNARY) OPERATOR
+
+//The conditional operator allows us to write something similar to an if/else statement but all in one line.
+/*
+const age = 25;
+age >= 18 ? console.log('I like to drink wine') : //The if block         console.log('I like to drink water') //The else part
+
+//In a shorter way and easier to understand and to write
+//VERY USEFUL
+const drink = age >= 18 ? 'wine' : 'water'; //These are expression who produces a value
+console.log(drink);
+
+
+//Without conditional operator we would had used if/else statement
+let drink2;
+if (age > 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+//When a conditional operator is an expression can you do this
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+// it dosent work with if/else because it's a statement
+
+//We still need if/else statement due to bigger blocks of codethat we need to execute basedon a condition
+
+//Ternary operatoris perfect when we justneed to take a quick decision
+*/
