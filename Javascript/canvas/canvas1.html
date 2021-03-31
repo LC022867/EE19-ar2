@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //Hitta canvas-element
+        const rityta = document.querySelector("canvas");
+
+        //gör rityta större
+        rityta.width = 800;
+        rityta.height = 600;
+
+        //slå på ritmotorn (rit-api)
+        var ctx = rityta.getContext("2d");
+        /*
+        //rita en fylld fyrkant
+        ctx.fillRect(100, 100, 200, 200);
+
+        //Rita en röd fyrkant
+        ctx.fillStyle = "red";
+        ctx.fillRect(150, 150, 200, 200);
+
+        //rita en grön fyrkant brevid
+        ctx.fillStyle = "green";
+        ctx.fillRect(500, 100, 200, 200);
+        */
+
+        //////////////////////////////////////////////////
+        //////////////////////////////////////////////////
+
+        //rita fyra fyrkanter på varandra
+        /*
+        ctx.fillRect(350, 100, 100, 100);
+        ctx.fillStyle = "green";
+
+        ctx.fillRect(350, 200, 100, 100);
+        ctx.fillStyle = "grey";
+
+        ctx.fillRect(350, 300, 100, 100);
+        ctx.fillStyle = "red";
+
+        ctx.fillRect(350, 400, 100, 100);
+        ctx.fillStyle = "orange";
+        */
+
+        ///////////////////////////////////////////////////
+        ///////////////////////////////////////////////////
+        //rita rutmönster
+        /*
+        ctx.fillStyle = "blue";
+        ctx.fillRect(350, 100, 100, 100);
+        ctx.fillRect(450, 200, 100, 100);
+        ctx.fillRect(550, 100, 100, 100);
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(350, 200, 100, 100);
+        ctx.fillRect(450, 100, 100, 100);
+        ctx.fillRect(550, 200, 100, 100);
+        */
+        //////////////////////////////////////////////////
+        //////////////////////////////////////////////////
+        //Sveriges flagga
+        /*
+        ctx.fillStyle = "blue";
+        ctx.fillRect(150, 90, 500, 300);
+
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(150, 200, 500, 50);
+        ctx.fillRect(350, 90, 50, 300);
+        */
+        /////////////////////////////////////////////////
+        /////////////////////////////////////////////////
+        //rita en linje
+        //börja en bana
+        /*
+        ctx.beginPath();
+
+        //flytta pennan (x1, x2)
+        ctx.moveTo(100, 400);
+
+        //ritamed pennan (y1, y2)
+        ctx.lineTo(550, 50);
+
+        ctx.stroke();
+        */
+        /////////////////////////////////////////////////
+        /////////////////////////////////////////////////
+        //Tjeckiens flagga
+
+        //göra två fyrkanter
+        /*
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 250, 500, 150);
+
+        ctx.fillStyle = "white";
+        ctx.fillRect(100, 100, 500, 150);
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(600, 100);
+        ctx.lineTo(600, 250);
+        ctx.stroke();
+
+        //triangel
+        ctx.fillStyle = "blue";
+
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(400, 250);
+        ctx.lineTo(100, 400)
+        ctx.lineTo(100, 100);
+        ctx.fill();
+        ctx.stroke();
+        */
+        /////////////////////////////////////////////////
+        /////////////////////////////////////////////////
+        //Göra en gubbe
+
+        //rita en cirkel
+        //börja en bana
+        //Huvud
+        ctx.beginPath();
+        ctx.arc(400, 300, 80, 0, Math.PI * 2);
+        //färglägg linjen
+        ctx.stroke();
+
+        //bliknade öga
+        ctx.beginPath();
+        ctx.moveTo(375, 290);
+        ctx.lineTo(360, 290);
+        ctx.stroke();
+
+        //högra öga
+        ctx.beginPath();
+        ctx.arc(435, 290, 10, 0, Math.PI * 2);
+        //färglägg linjen
+        ctx.stroke();
+
+        //glad mun
+        ctx.beginPath();
+        ctx.arc(400, 330, 20, 6.5, Math.PI * 3);
+        //färglägg linjen
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(400, 380);
+        ctx.lineTo(400, 570);
+        ctx.moveTo(400, 500);
+        ctx.lineTo(450, 400)
+        ctx.moveTo(400, 500);
+        ctx.lineTo(320, 570)
+        ctx.stroke();
+    </script>
+</body>
+</html>
