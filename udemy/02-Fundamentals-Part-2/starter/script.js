@@ -88,3 +88,35 @@ console.log(age1, age2);
 //IMPORTANT! You most know both of them even if I won't use declarations in my case.
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ARROW FUNCTIONS
+
+//Arrow function is a special form of function expression that is shorter and therefore faster to write.
+
+//FUNCTION EXPRESSION
+/*
+const calAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+//ARROW FUNCTION
+const calAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calAge3(1991);
+console.log(age3);
+
+
+//An example to use it
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    //return retirement
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Luciano'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
+
+//Use the expression for now on. There is a negative about arrow functions that I don't know yet.
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
