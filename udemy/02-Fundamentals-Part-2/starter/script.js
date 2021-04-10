@@ -64,7 +64,7 @@ console.log(appleOrangeJuice);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //FUNCTION DECLARATIONS VS. EXPRESSIONS
-
+/*
 //FUNCTIONS DECLARATION
 function calAge1(birthYear) {
     return 2037 - birthYear;
@@ -73,17 +73,18 @@ const age1 = calAge1(1991);
 
 
 //FUNCTION EXPRESSION
-//all of them is basically an expression which produces a value 
+//all of them is basically an expression which produces a value
 const calAge2 = function (birthYear) {
     return 2037 - birthYear;
 }
 const age2 = calAge2(1991);
 
 
-//The same results 
+//The same results
 console.log(age1, age2);
 
 //Which should I use? It's basically your own personal preference.
-//I may use expression because I like to focus on a nice structure where I can define all the functions first at the top of the code and then I can call them. So it makes it more organisized. 
-//IMPORTANT! You most know both of them even if I won't use declarations in my case. 
+//I may use expression because I like to focus on a nice structure where I can define all the functions first at the top of the code and then I can call them. So it makes it more organisized.
+//IMPORTANT! You most know both of them even if I won't use declarations in my case.
+*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
