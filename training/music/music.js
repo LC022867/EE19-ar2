@@ -1,5 +1,5 @@
 
-const mySong = document.getElementById("No_Game_No_Life");
+const mySong = document.getElementById("no_Game_No_Life");
 const icon = document.getElementById("icon");
 
 icon.onclick = function () { //When someone clicks the icon
