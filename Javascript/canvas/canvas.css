@@ -4,15 +4,51 @@ body {
 
 canvas {
     background: #FFF;
-    margin: auto;
+    margin: 10px auto;
     display: block;
+    border: 5px solid blue;
 }
 
 .kontainer {
-    background: gray;
+    background: rgb(31, 167, 190);
     width: 1000px;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto;
     padding: 1em;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.kontainer h1 {
+    color: rgb(22, 177, 22);
+}
+
+label {
+    color: rgb(109, 21, 112);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
+    padding: 0;
+}
+input, textarea {
+    padding: 0.5em;
+    margin-top: -0.4em;
+    font-style: italic;
+    border-radius: 0.3em;
+    border: 2px solid #55a5d2;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    height: 10em;
+}
+button {
+    margin: 1em 0;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: bold;
+    color: black;
+    background-color: red;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva Text</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+            <label>mjölk x = <input class="xInput" type="text"></label>
+            <label>mjölk y = <input class="yInput" type="text"></label>
+            <label>mjölk b = <input class="bInput" type="text"></label>
+            <label>mjölk h = <input class="hInput" type="text"></label>
+            <label>mjölk färg = <input class="colorInput" type="color"></label>
+            <button class="rita">Rita mjölkpaket</button>
+            <button class="radera">Radera</button>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        "use strict";
+        //Hitta canvas-element
+        const ritYta = document.querySelector("canvas");
+        const rutaXmjolk = document.querySelector(".xInput");
+        const rutaYmjolk = document.querySelector(".yInput");
+        const btn = document.querySelector(".rita");
+        const rutaBmjolk = document.querySelector(".bInput");
+        const rutaHmjolk = document.querySelector(".hInput");
+        const rutaColor = document.querySelector(".colorInput");
+        const knappSudda = document.querySelector(".radera");
+
+
+        //Göra ritytan större
+        ritYta.height = 600;
+        ritYta.width = 600;
+
+        //Slå på ritmotorn
+        let ctx = ritYta.getContext("2d");
+
+        //Vi använder variabel
+        let x = 100;    //skapa variabel x = x koordinaten
+        let y = 200;    //Skapa variabel y = y koordinaten
+        let b = 50;     //Skapa variabel b = bredden
+        let h = 50;     //skapa variabel h = höjd
+        ctx.fillStyle = "pink";
+        ctx.fillRect(x, y, b, h);
+
+        //Lyssna på knappen
+        btn.addEventListener("click", function () {
+            //Läs av rutaXmjolk och rutaYmjolk
+            let x = rutaXmjolk.value;
+            let y = rutaYmjolk.value;
+            let b = rutaBmjolk.value;
+            let h = rutaHmjolk.value;
+
+
+            //Rita ut en mjölkpaket
+            ctx.fillStyle = rutaColor.value;
+            ctx.fillRect(x, y, b, h);
+        });
+
+        knappSudda.addEventListener("click", function () {
+            ctx.clearRect(0, 0, 600, 600);
+        })
+    </script>
+</body>
+</html>
