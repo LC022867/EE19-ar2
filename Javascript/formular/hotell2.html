@@ -10,44 +10,100 @@
     <div class="kontainer">
         <h1>Boka rum</h1>
         <h2>Beställning</h2>
-        <label>Antal nätter <input type="text" class="antal"></label>
-        <label>Enkelrum 800:-, dubbelrum 1200:- <input type="text" class="pris"></label>
-        <label>Tillägg Wifi 100:- <input type="text" class="wifi"></label>
-        <label>Tillägg parkering 50:- <input type="text" class="parkering"></label>
-        <button>Räkna ut</button>
+        <label>Ange namn <input type="text" class="namn"></label>
+        <label>Ange antal nätter <input type="text" class="antal"></label>
+
+        <h3>Ange rumstyp</h3>
+        <label>
+            <br>
+            <div><input type="radio" name="rumstyp" class="enkel">Enkelrum 800:-</div>
+        </label>
+        <label>
+            <br>
+            <div><input type="radio" name="rumstyp" class="dubbel"> Dubbelrum 1200:</div>
+        </label>
+        <label>
+            <br>
+            <div><input type="radio" name="rumstyp" class="familj"> Familjerum 1500:-</div>
+        </label>
+
+        <h3>Ange tillägg</h3>
+        <label>
+            <br>
+            <div><input type="checkbox" class="wifi"> Wifi</div>
+        </label>
+        <label>
+            <br>
+            <div><input type="checkbox" class="parkering"> Parkering</div>
+        </label>
+
+        <button disabled>Räkna ut</button>
 
         <h2>Uppskattad kostnad</h2>
-        <label>Pris för rummet <input type="text" class="prisRummet"></label>
-        <label>Pris för tillägg <input type="text" class="prisTillägg"></label>
-        <label>Total för bokning <input type="text" class="total"></label>
+        <label>Total pris <input type="text" class="total" disabled></label>
     </div>
     <script>
         //konnekta till element vi använder
+        // 2 textrutor
+        const rutaNamn = document.querySelector(".namn");
         const rutaAntal = document.querySelector(".antal");
-        const rutaPris = document.querySelector(".pris");
-        const rutaWifi = document.querySelector(".wifi");
-        const rutaParkering = document.querySelector(".parkering");
+
+        // 3 radioknappar
+        const radioEnkel = document.querySelector(".enkel");
+        const radioDubbel = document.querySelector(".dubbel");
+        const radioFamilj = document.querySelector(".familj");
+
+
+        // 2 kryssrutor
+        const kryssWifi = document.querySelector(".wifi");
+        const kryssParkering = document.querySelector(".parkering");
+
         const knappen = document.querySelector("button");
-        const rutaPrisRummet = document.querySelector(".prisRummet");
-        const rutaPrisTillägg = document.querySelector(".prisTillägg");
+
         const rutaTotal = document.querySelector(".total");
 
-        //när man klickar på knappen
+        //Globala variabeler
+        let rumPris = 0;
+
+        //När man trycker på radioknapparna
+        radioEnkel.addEventListener("click", function () {
+            console.log("Du har klickat på radioKnappen Enkelrum");
+            rumPris = 800;
+            knappen.disabled = false;
+        })
+        radioDubbel.addEventListener("click", function () {
+            console.log("Du har klickat på radioKnappen Dubbelrum");
+            rumPris = 1200;
+            knappen.disabled = false;
+        })
+        radioFamilj.addEventListener("click", function () {
+            console.log("Du har klickat på radioKnappen Familjerum");
+            rumPris = 1500;
+            knappen.disabled = false;
+        })
+
+
+        //När man klickar på knappen beräkna 
         knappen.addEventListener("click", function () {
-            console.log(rutaAntal.value);
-            console.log(rutaPris.value);
-            console.log(rutaWifi.value);
-            console.log(rutaParkering.value);
+            console.log("Pris för rummet = ", rumPris);
 
-            // Räkna ut delsumma för rummet, antal * pris-för-rummet
-            rutaPrisRummet.value = rutaAntal.value * rutaPris.value;
+            //läsa av antal-nätter
+            let antal = rutaAntal.value;
 
-            // Räkna ut delsumma för tilläggen, wifi + parkering
-            rutaPrisTillägg.value = parseInt(rutaWifi.value) + parseInt(rutaParkering.value);
+            // Räkna ut totala priset
+            let total = antal * rumPris;
 
-            // Räkna ut totalsumman, delsumma 1 + delsumma 2
-            rutaTotal.value = parseInt(rutaAntal.value * rutaPris.value) + parseInt(rutaWifi.value) + parseInt(rutaParkering.value);
+            //Är wifi vald?
+            if (kryssWifi.checked) {
+                total += 100;
+            }
+
+            //Är parkering vald?
+            if (kryssParkering.checked) {
+                total += 50;
+            }
+
+            // Skriv ut total
+            rutaTotal.value = total;
         })
     </script>
-</body>
-</html>
