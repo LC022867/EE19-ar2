@@ -1,6 +1,6 @@
 //ACTIVATING STRICT MODE
 
-/*Strict mode is a special mode that we can activate in Javascript, which makes it easier for us to write secure Javascript codes.
+/*Strict mode is a special mode that we can activate in Javascript, which makes it easier for us to write a secure Javascript codes.
 
 To activate strict mode we need to use this: 'use strict';
 

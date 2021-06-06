@@ -452,8 +452,8 @@ else if (dolpAverageScore === koalAverageScore && dolpAverageScore && koalAverag
 const day = 'monday';
 
 //Like if else statement but shorter way
-switch (day) { //day === 'monday'
-    case 'monday':
+switch (day) {
+    case 'monday': //day === 'monday'
         console.log('Plan course structure');
         console.log('Go to coding meetup');
         break; //Taking a break or a pause. else it will continue executing
