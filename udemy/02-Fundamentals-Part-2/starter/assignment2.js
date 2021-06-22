@@ -58,3 +58,22 @@ const italy3 = percentageOfWorld3(60);
 console.log(china3, sweden3, italy3);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCTIONS CALLING OTHER FUNCTIONS
+/*
+function percentageOfWorld1(percent) {
+    return percent / 7800;
+}
+
+const describePopulation = function (country, population) {
+    const percentage = percentageOfWorld1(population);
+    const description = `${country} has ${population} million
+    people, which is about ${percentage}% of the world.`;
+    console.log(description);
+};
+
+describePopulation('Sweden', 10);
+describePopulation('China', 1441);
+describePopulation('Norway', 5.3);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

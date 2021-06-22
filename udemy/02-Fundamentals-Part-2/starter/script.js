@@ -120,3 +120,23 @@ console.log(yearsUntilRetirement(1980, 'Bob'));
 //Use the expression for now on. There is a negative about arrow functions that I don't know yet.
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCTIONS CALLING OTHER FUNCTIONS 
+/*
+function cutPieces(fruit) { // 3. As we call the cutPieces this too is acutally the argument for the cutPieces function. So it's replacing the fruit parameter
+
+    return fruit * 4; // 4. This will get multiplied by 4. After that the value will store into the "applePieces" variable.
+}
+
+function fruitProcessor(apples, oranges) {
+    const applepieces = cutPieces(apples); //2. That value 2 will then be used to call the cutPieces function
+    const organepieces = cutPieces(oranges);
+
+    console.log(apples, oranges);
+    const juice = `Juice with ${applepieces} piece of apple and ${organepieces} pieces of orange.`; // 5. Then we can use "applepireces or organepices"
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3)); //1. Here in the fruitprocessor 2 and 3, this will replace the apples to 2 and organes to 3.
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
