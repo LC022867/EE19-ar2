@@ -140,3 +140,45 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3)); //1. Here in the fruitprocessor 2 and 3, this will replace the apples to 2 and organes to 3.
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//REVIEWING FUNCTIONS
+/*
+const calAge = function (birthYeah) { //As you see there are two birthYeah, but they are not the same argument. So it's ok to use the same argument.
+    return 2037 - birthYeah;
+}
+
+const yearsUntilRetirement = function (birthYeah, firstName) {
+    const age = calAge(birthYeah);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement //The return keyword will immediately exit the function. So you need to put that last.
+    } else {
+        console.log(`${firstName} has already retired :)`);
+        return -1;
+    }
+}
+
+console.log(yearsUntilRetirement(2002, "Luciano"));
+console.log(yearsUntilRetirement(1970, "Mike"));
+
+//The first function, the function declaration. They can be used before they are declared in the code.
+
+//Second, we have the function expressions, and they are essentially funtions values that are stored in a variable.
+
+//Finally, we have arrow functions that are in fact also functions expressions,but special ones. These are great for quick one-line functions where we don't need to explicitly use the return keyword, and no curly braces either
+
+//IMPORTANT! These here are that these are three different ways of writing functions, but they all work in a similar way. All of them can receive input data, transform data, and then they can output data. No matter which type of functions we use.
+
+//Functions structure:
+
+//Functions name.
+
+//Parameters: placeholders to receive input values, like local variables.
+
+//Function body: block of codes that we want to reuse.
+
+//Return statement to output a value from the function.
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
