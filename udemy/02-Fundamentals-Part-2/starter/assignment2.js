@@ -136,3 +136,23 @@ test2K = calcAverage(23, 34, 27);
 checkWinner(test1D, test2K);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//INTRODUCTION TO ARRAY
+/*
+const populations = [60, 10, 33, 144];
+
+console.log(populations.length === 4);
+
+function percentageOfWorld1(percent) {
+    return percent / 7800;
+}
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
+
+console.log(percentages);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

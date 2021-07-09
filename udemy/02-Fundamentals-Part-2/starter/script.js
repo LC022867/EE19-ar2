@@ -182,3 +182,51 @@ console.log(yearsUntilRetirement(1970, "Mike"));
 //Return statement to output a value from the function.
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//INTRODUCTION TO ARRAYS
+/*
+const friend1 = 'Olegas';
+const friend2 = 'Isam';
+const friend3 = 'Micheal';
+
+//Instead of repeating the same thing, you can do this so called arrays
+//two ways
+
+const friends = ['Olegas', 'Isam', 'Micheal'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2021)
+
+console.log(friends[0]); //Gonna pick Olegas
+console.log(friends[1]); //Gonna pick Isam
+console.log(friends[2]); //Gonna pick Micheal
+
+console.log(friends.length); //Number of elements in the array = 3
+console.log(friends[friends.length - 1]); //Number of elements in the array - 1 = 2
+
+//If I want to unfriend someone in the list
+friends[2] = 'Cow';
+console.log(friends);
+
+
+//We can do about me
+const luciano = ['Luciano', 'Cucarano', 18, 'student', friends];
+console.log(luciano);
+console.log(luciano.length);
+
+//exercise
+const calAge = function (birthYeah) {
+    return 2037 - birthYeah;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calAge(years[2]);
+const age2 = calAge(years[years.length - 1]);
+
+console.log(age1, age2);
+
+const age = [calAge(years[2]), calAge(years[years.length - 1])];
+console.log(age);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
