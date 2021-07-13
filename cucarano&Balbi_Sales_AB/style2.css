@@ -44,19 +44,28 @@ h1 {
 
 nav {
     background-color: #595e77;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
 }
 
 .nav_links {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .nav_links li {
-    display: inline-block;
     padding: 0 15px;
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
 }
 .nav_links li a:hover {
     color: #0088a9;
@@ -106,11 +115,15 @@ button:hover {
         position: absolute;
         right: 0;
         height: 92vh;
-        top: 8vh;
+        top: 9vh;
         background-color: #595e77;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+
+    h1 {
+        margin-left: 10rem;
     }
 }
