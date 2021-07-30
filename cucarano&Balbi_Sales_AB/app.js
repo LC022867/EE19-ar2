@@ -1,3 +1,4 @@
+//Navigation för mobil
 const navSidor = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav_links');
@@ -15,5 +16,7 @@ const navSidor = () => {
         });
     });
 }
-
 navSidor();
+//Navigation för mobil slut
+
+
