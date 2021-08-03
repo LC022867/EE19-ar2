@@ -160,15 +160,14 @@ h1 {
 }
 
 .logo {
-    color: rgb(226, 226, 226);
     margin-right: auto;
+    list-style: none;
 }
 
-.logo li {
-    font-size: 2.5rem;
+.logo li a {
+    font-size: 2rem;
     color: black;
     font-weight: bold;
-    text-decoration: none;
 }
 
 nav {
@@ -188,14 +187,15 @@ nav {
 }
 
 .nav_links li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
 }
 .nav_links li a:hover {
     color: #0088a9;
@@ -337,7 +337,7 @@ button:hover {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./bilder/toa-heftiba-U_zIfKfEoRM-unsplash.jpg);
+    background-image: url(./bilder/pablo-merchan-montes-GFW3dJRiMsQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
     margin: 10px 5%;
@@ -471,6 +471,20 @@ img {
     position: relative;
 }
 
+/*fixar bildernas utrymme*/
+#projects .project-img .fix1 {
+    width: 500px;
+}
+#projects .project-img .fix2 {
+    width: 500px;
+}
+#projects .project-img .fix3 {
+    width: 500px;
+}
+#projects .project-img .fix4 {
+    width: 500px;
+}
+
 /*Lägger till ett filter över bilden*/
 #projects .project-img::after {
     content: '';
@@ -520,7 +534,7 @@ img {
 /*bildens utrymme*/
 #om .vaster-om {
     width: 260px;
-    height: 360px;
+    height: auto;
     box-shadow: 0 0 12px 6px black;
 }
 
@@ -528,6 +542,7 @@ img {
 #om .hoger-om {
     width: 100%;
 }
+
 #om .hoger-om h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -569,13 +584,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 12px 0 rgb(27, 27, 27);
+    box-shadow: 0 0 12px 6px rgb(221, 221, 221);
     transition: .5s ease box-shadow;
     flex-direction: column;
 }
 
 #kontakt .kontakt-item:hover {
-    box-shadow: 0 0 3px 0 rgb(27, 27, 27);
+    box-shadow: 0 0 3px 0 rgb(48, 20, 151);
 }
 
 /*Storlek av iconerna*/
@@ -609,12 +624,9 @@ img {
 /*<!----------------footer------------------>*/
 #footer {
     background-image: linear-gradient(to right bottom, #b80b47, #910856, #641659, #351a50, #06153b);
-    ;
 }
 
 #footer .footer {
-    min-height: 200px;
-    flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
 }
@@ -636,7 +648,6 @@ img {
 }
 
 #footer .media-icon {
-    display: flex;
     margin-bottom: 30px;
 }
 
@@ -651,6 +662,12 @@ img {
     /*För alla titelar*/
     h1.section-titel {
         font-size: 5rem;
+    }
+    /*Fixar rubrik för storleken*/
+    .logo li a {
+        font-size: 2.2rem;
+        color: black;
+        font-weight: bold;
     }
 
     /*Rubrik*/
