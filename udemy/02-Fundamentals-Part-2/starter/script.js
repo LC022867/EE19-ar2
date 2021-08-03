@@ -210,9 +210,12 @@ console.log(friends);
 
 
 //We can do about me
+//We can put a array in other arrays
 const luciano = ['Luciano', 'Cucarano', 18, 'student', friends];
 console.log(luciano);
 console.log(luciano.length);
+
+
 
 //exercise
 const calAge = function (birthYeah) {
@@ -229,4 +232,56 @@ console.log(age1, age2);
 const age = [calAge(years[2]), calAge(years[years.length - 1])];
 console.log(age);
 */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//BASIC ARRAY OPERATION (METHOD)    
+
+//ADD ELEMENTS
+/*
+//First method is called "push"
+//So the push method adds elements to the end of an array.
+const friends = ['Olegas', 'Isam', 'Micheal'];
+friends.push('Akira');
+console.log(friends);
+
+//Can see the length
+const newLength = friends.push('Lukman');
+console.log(newLength);
+
+// just like the push method, the unshift method also returns the length of the new array. But puts in the begining of the list.
+friends.unshift('Gorgia');
+console.log(friends);
+
+/////////////////////////
+
+//REMOVE ELEMENTS
+
+//the opposite of the push method.
+const popped = friends.pop(); //last
+//Can see who you removed
+console.log(popped);
+//How many are left
+console.log(friends);
+
+
+//the opposite of the unshift method.
+friends.shift(); //First
+console.log(friends);
+
+//////////////////////////
+
+//very useful method that tells us in which position a certain element is in the array.
+console.log(friends.indexOf('Isam')); //1
+console.log(friends.indexOf('Meow')); //-1
+//If it is -1 then there is no Meow in the list
+
+
+//there is a very similar method to the indexOf, but which is a bit more modern and in my opinion also more useful.
+console.log(friends.includes('Isam')); //True
+console.log(friends.includes('Meow')); //False
+
+if (friends.includes('Olegas')) {
+    console.log('You have a friend called Olegas!');
+}
+/*
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

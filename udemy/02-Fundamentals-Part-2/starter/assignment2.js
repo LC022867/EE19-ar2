@@ -156,3 +156,24 @@ const percentages = [
 console.log(percentages);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//BASIC ARRAY OPERATION (METHOD)    
+/*
+const neighbours = ['Sweden', 'Norway', 'Finland'];
+console.log(neighbours);
+
+neighbours.push('Utopia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country! :D');
+}
+
+//Change "Sweden" to "Sweden is good :)"
+neighbours[neighbours.indexOf('Sweden')] = 'Sweden is good! :)';
+console.log(neighbours);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
