@@ -325,3 +325,35 @@ const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//INTRODUCTION TO OBJECTS
+
+//arrays
+const lucianoArray = [
+    'Luciano',
+    'Cucarano',
+    2020 - 2002,
+    'Webb Developer',
+    ['Isam', 'Olegas', 'Micheal', 'Gorgia']
+]
+
+//Objects
+//t's called the object literal Syntax because we are literally writing down the entire object content.
+/*
+const luciano = {
+    name: 'Luciano',
+    lastName: 'Cucarano',
+    age: 2020 - 2002,
+    job: 'Webb developer',
+    friends: ['Isam', 'Olegas', 'Micheal', 'Gorgia']
+}
+*/
+//we use objects to essentially group together different variables that really belong together. Different variables that really belong together.
+
+//IMPORTANT! The big difference between objects and arrays is that in objects, the order of these values does not matter at all when we want to retrieve them.
+
+//So in arrays, the order in which we specify the elements matters a lot because that's how we access these elements. So we can only access array elements using their order number. This means that we should use arrays for more order data.
+
+//Objects for more unstructured data. And data that we actually want to name, and then retrieve from the object, based on that name.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
