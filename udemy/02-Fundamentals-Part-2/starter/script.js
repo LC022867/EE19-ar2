@@ -329,6 +329,7 @@ console.log(total);
 //INTRODUCTION TO OBJECTS
 
 //arrays
+/*
 const lucianoArray = [
     'Luciano',
     'Cucarano',
@@ -336,12 +337,12 @@ const lucianoArray = [
     'Webb Developer',
     ['Isam', 'Olegas', 'Micheal', 'Gorgia']
 ]
-
+*/
 //Objects
 //t's called the object literal Syntax because we are literally writing down the entire object content.
 /*
 const luciano = {
-    name: 'Luciano',
+    firstName: 'Luciano',
     lastName: 'Cucarano',
     age: 2020 - 2002,
     job: 'Webb developer',
@@ -356,4 +357,58 @@ const luciano = {
 
 //Objects for more unstructured data. And data that we actually want to name, and then retrieve from the object, based on that name.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//DOT VS. BRACKET NOTATION
+/*
+const luciano = {
+    firstName: 'Luciano',
+    lastName: 'Cucarano',
+    age: 2020 - 2002,
+    job: 'Webb developer',
+    friends: ['Isam', 'Olegas', 'Micheal', 'Gorgia']
+}
+console.log(luciano);
+*/
+////The first way of getting a property from an object is by using dot notation.
+/*
+//If you want to ping the lastName in two ways
+console.log(luciano.lastName);
+console.log(luciano['lastName']);
+*/
+//The big difference between these two here is that in the bracket notation here, we can actually put any expression that we'd like, so we don't have to explicitly write the string here, but instead we can compute it from some operation because remember that an operation is basically an expression.
+
+/////////////////
+/*
+const nameKey = 'Name';
+//first + nameKey = firstName
+console.log(luciano['first' + nameKey]);
+//last + nameKey = lastName
+console.log(luciano['last' + nameKey]);
+*/
+//////////////////
+
+//Experiment
+//Making a request
+/*
+const interestedIn = prompt('What do you want to know about Luciano? Choose between firstName, lastName, age, job, and friends');
+
+//If the user is choosing one if this, then it becomes true
+//If not, then it will be false and go to else statement
+if (luciano[interestedIn]) {
+    console.log(luciano[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+//To put new lists about Luciano in two ways
+luciano.location = 'MilkLand';
+luciano['discord'] = 'Luciano2002';
+console.log(luciano);
+*/
+//Challenge
+//"Luciano has 4 friends, and his best friend is called Isam"
+/*
+console.log(`${luciano.firstName} has ${luciano.friends.length} friends, and his best friend is called ${luciano.friends[0]}`);
+*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
