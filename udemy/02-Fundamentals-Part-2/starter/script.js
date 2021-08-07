@@ -412,3 +412,91 @@ console.log(luciano);
 console.log(`${luciano.firstName} has ${luciano.friends.length} friends, and his best friend is called ${luciano.friends[0]}`);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//OBJECT METHODS
+
+//So any function that is attached to an object is called a method. So of course we could have not used a function declaration here. However we can use a function expression, because it produces a value.
+/*
+const luciano = {
+    firstName: 'Luciano', //String value
+    lastName: 'Cucarano',
+    birthyear: 2002,
+    job: 'Webb developer',
+    friends: ['Isam', 'Olegas', 'Micheal', 'Gorgia'], //array value
+    hasDriverLicense: true, //boolean value
+    age: 30
+
+    /*
+    calcAge: function (birthyear) {
+      return 2032 - birthyear;
+    //} //Function value
+    */
+///////////////////////
+/*
+calcAge: function () {
+    console.log(this); // = luciano
+    return 2032 - this.birthyear; // == luciano.birthyear
+}
+//we will read the birthyear directly from the object "this".
+//The "this" variable is basically equal to the object
+*/
+///////////////////////
+/*
+calcAge: function () {
+    this.age = 2032 - this.birthyear;
+    return this.age;
+}
+
+};
+*/
+/*
+console.log(luciano.calcAge());
+console.log(luciano.age); //30
+console.log(luciano.age); //30
+console.log(luciano.age); //30
+*/
+//////////////////////////
+
+//THIS method
+
+//the object that is calling the calcAge method here is Luciano. So that means that inside this method, the this variable or the this keyword will point to Luciano.
+//console.log(luciano.calcAge()); //30
+
+////////////////////////
+//Call the function 
+//console.log(luciano.calcAge(2002)); //30
+
+////////////////////////
+
+//Or the Bracket notation
+//console.log(luciano['calcAge'](2002)); //30
+
+
+///////////////////////////////////
+//Challange
+//I want you to write a method called getSummary and this method should return a string which should kind of summarize the data about Luciano
+
+//"Luciano is a 30-year old webb developer, and he has a/no driver's license"
+/*
+const luciano = {
+    firstName: 'Luciano', //String value
+    lastName: 'Cucarano',
+    birthyear: 2002,
+    job: 'Webb developer',
+    friends: ['Isam', 'Olegas', 'Micheal', 'Gorgia'], //array value
+    hasDriverLicense: true, //boolean value
+
+    calcAge: function () {
+        this.age = 2032 - this.birthyear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license`
+    }
+};
+console.log(luciano.calcAge());
+
+console.log(luciano.getSummary());
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

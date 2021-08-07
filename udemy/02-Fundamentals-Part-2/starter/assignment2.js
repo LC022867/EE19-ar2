@@ -212,4 +212,32 @@ myCountry['population'] -= 2;
 console.log(myCountry['population']);
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//OBJECT METHODS
 
+//Add a method called 'describe' to the 'myCountry' object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+
+//Call the 'describe' method
+
+//Add a method called 'checkIsland' to the 'myCountry' object. This method will set a new property on the object, called 'isIsland'. 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+/*
+const myCountry = {
+    country: 'Sweden',
+    capital: 'Stockholm',
+    language: 'Swedish',
+    population: 10,
+    neighbours: ['Norway', 'Finland', 'Denmark'],
+
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million swedish - speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
+};
+
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+console.log(myCountry);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
