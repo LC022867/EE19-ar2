@@ -555,3 +555,22 @@ if (mark.bmi > john.bmi) {
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//THE FOR LOOPS
+/*
+// console.log('Lifting weight repitition 1 ^o^');
+// console.log('Lifting weight repitition 2 ^o^');
+// console.log('Lifting weight repitition 3 ^o^');
+// console.log('Lifting weight repitition 4 ^o^');
+// console.log('Lifting weight repitition 5 ^o^');
+// console.log('Lifting weight repitition 6 ^o^');
+// console.log('Lifting weight repitition 7 ^o^');
+// console.log('Lifting weight repitition 8 ^o^');
+// console.log('Lifting weight repitition 9 ^o^');
+// console.log('Lifting weight repitition 10 ^o^');
+
+//For loops keeps running while conditions is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weight repitition ${rep} ^o^`);
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
