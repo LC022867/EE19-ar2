@@ -286,6 +286,8 @@ if (friends.includes('Olegas')) {
 /*
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
+//CHALLANGE 2
+
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
 Your tasks:
@@ -500,3 +502,56 @@ console.log(luciano.calcAge());
 console.log(luciano.getSummary());
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//CHALLANGE 3
+
+//Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+//Your tasks:
+//1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+
+//2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+
+//3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+
+//Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+//GOOD LUCK
+
+//MY CODE:
+
+/*
+mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    weight: 78,
+    tall: 1.69,
+
+    calcBMI: function () {
+        return this.bmi = this.weight / this.tall ** 2;
+    }
+};
+
+john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    weight: 92,
+    tall: 1.95,
+
+    calcBMI: function () {
+        return this.bmi = this.weight / this.tall ** 2;
+    }
+};
+
+//To unlock "john.bmi" and "mark.bmi"
+john.calcBMI()
+mark.calcBMI()
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s (${john.bmi})!`);
+} else {
+    console.log(`${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s (${mark.bmi})!`);
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
