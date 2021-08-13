@@ -575,3 +575,59 @@ for (let rep = 1; rep <= 10; rep++) {
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//LOOPING ARRAYS, BREAKING AND CONTINUING
+
+// console.log(luciano[0]);
+// console.log(luciano[1]);
+// ....
+// console.log(luciano[4]);
+// luciano[5] does not EXIST
+/*
+const luciano = [
+    'Luciano',
+    'Cucarano',
+    2020 - 2002,
+    'Webb Developer',
+    ['Isam', 'Olegas', 'Micheal', 'Gorgia'],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < luciano.length; i++) {
+    //reading from Lucianos array
+    console.log(luciano[i], typeof luciano[i]);
+
+    //filling types array
+    //types[i] = typeof luciano[i];
+    types.push(typeof luciano[i]);
+};
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (var i = 0; i < years.length; i++) {
+    //ages[i] = 2037 - years[i];
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+//continue and break
+console.log('-------- ONLY STRINGS! --------');
+for (var i = 0; i < luciano.length; i++) {
+    //continue if it is a string
+    if (typeof luciano[i] !== "string") continue;
+    console.log(luciano[i], typeof luciano[i]);
+}
+
+console.log('-------- BREAK WITH NUMBER! --------');
+for (var i = 0; i < luciano.length; i++) {
+    //continue if it is a string
+    if (typeof luciano[i] === "number") break;
+    console.log(luciano[i], typeof luciano[i]);
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
