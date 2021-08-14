@@ -631,3 +631,62 @@ for (var i = 0; i < luciano.length; i++) {
 }
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
+/*
+const luciano = [
+    'Luciano',
+    'Cucarano',
+    2020 - 2002,
+    'Webb Developer',
+    ['Isam', 'Olegas', 'Micheal', 'Gorgia'],
+];
+
+//0, 1, 2 ...., 4
+//4, 3, 2 ...., 0
+
+for (let i = luciano.length; i >= 0; i--) {
+    console.log(i, luciano[i]);
+};
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`---------Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
+    };
+};
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//THE WHILE LOOP
+/*
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`LOOP: Lifting weight repitition ${rep}`);
+};
+
+//It's called the while loop, because it will run while this condition is true.
+//It can be used in a larger variety of situations
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weight repitition ${rep}`);
+    rep++;
+}
+*/
+//////////////////////////////////////////////
+
+//Role a dice until the dice turns to 6
+/*
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+}
+*/
+//whenever you do need a loop without a counter, you can reach for the while loop.
+
+//So we had no way of knowing how many times we would roll a dice that's different from six. Now, on the other hand, when we do know how many times the loop will run, that means that we're gonna actually need a counter. For example, when we want to loop over an array, we already know how many elements that array has, and so we know how many iterations we will need.And therefore the for loop is usually the right choice
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

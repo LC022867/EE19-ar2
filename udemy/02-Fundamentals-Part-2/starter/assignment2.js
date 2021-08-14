@@ -250,6 +250,9 @@ for (let vote = 1; vote <= 50; vote++) {
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
+
+//LOOPING ARRAYS, BREAKING AND CONTINUING
+
 const populations = [10, 1441, 332, 83];
 const percentages2 = [];
 
@@ -264,4 +267,42 @@ for (let i = 0; i < populations.length; i++) {
 
 console.log(percentages2);
 */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
+/*
+const listOfneighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden',
+        'Russia']
+];
+
+for (var i = 0; i < listOfneighbours.length; i++) {
+
+    for (var ne = 0; ne < listOfneighbours[i].length; ne++) {
+        console.log(`Neighbour: ${listOfneighbours[i][ne]}`);
+    }
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//THE WHILE LOOP
+/*
+const populations = [10, 1441, 332, 83];
+const percentages3 = [];
+
+let i = 0;
+while (i < populations.length) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages3.push(perc);
+
+    function percentageOfWorld1(percent) {
+        return percent / 7800;
+    };
+    i++;
+}
+console.log(percentages3);
+*/
+//The loop is better because it has a counter. The array 'populations' is the counter to have many times we need to repeat.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
